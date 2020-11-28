@@ -38,6 +38,10 @@ module.exports = {
     not_found: './src/not_found.js'
   },
 
+  output: {
+    filename: 'js/[name].js'
+  },
+
   plugins: [new webpack.ProgressPlugin()],
 
   module: {
