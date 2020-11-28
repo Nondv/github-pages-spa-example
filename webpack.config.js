@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 
@@ -42,7 +43,20 @@ module.exports = {
     filename: 'js/[name].js'
   },
 
-  plugins: [new webpack.ProgressPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      chunks: ['main'],
+      publicPath: '/',
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      chunks: ['not_found'],
+      filename: '404.html',
+      publicPath: '/',
+    }),
+    new webpack.ProgressPlugin(),
+  ],
 
   module: {
     rules: [{
