@@ -78,6 +78,16 @@ module.exports = {
     }]
   },
 
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    port: 8080,
+    historyApiFallback: {
+      rewrites: [
+        { from: /./, to: '/404.html' }
+      ]
+    },
+  },
+
   optimization: {
     minimizer: [new TerserPlugin()],
 
