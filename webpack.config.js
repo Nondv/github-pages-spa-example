@@ -35,7 +35,7 @@ module.exports = {
   mode: 'development',
 
   entry: {
-    main: './src/main.js',
+    main: './src/main.jsx',
     not_found: './src/not_found.js'
   },
 
