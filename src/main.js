@@ -1,3 +1,5 @@
+import 'bulma/css/bulma.css'
+
 import { popRedirectUri } from './redirectUri'
 
 console.log('Hello World from main main file!');
