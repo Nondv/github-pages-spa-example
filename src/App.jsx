@@ -6,6 +6,9 @@ import {
   Link,
 } from "react-router-dom";
 
+import Post from './pages/Post.jsx'
+import PostIndex from './pages/PostIndex.jsx'
+
 export default function App() {
   return (
     <Router>
@@ -19,11 +22,12 @@ export default function App() {
         </nav>
 
           <Switch>
-            <Route path="/404.html">
-              404!!!! {location.toString()}
+            <Route path="/posts/:id">
+              <Post />
             </Route>
+
             <Route path="/">
-              Home page
+              <PostIndex />
             </Route>
           </Switch>
       </div>

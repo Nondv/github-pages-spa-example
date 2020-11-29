@@ -1,0 +1,4 @@
+[
+  { "id": "hello-world", "title": "Hello world", "url": "/data/posts/1.md" },
+  { "id": "hello-js", "title": "Hello javascript", "url": "/data/posts/2.md" }
+]
