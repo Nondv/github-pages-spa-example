@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "server": "webpack serve",
-    "build": "webpack"
+    "build": "webpack && cp -r public/* dist/"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
