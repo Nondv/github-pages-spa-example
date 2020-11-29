@@ -20,7 +20,7 @@ export default function PostIndex() {
 
   return (
     <div>
-      <h1 class="title">Posts</h1>
+      <h1 className="title">Posts</h1>
       <ul>
         {posts.map(p => <li key={p.getId()} ><PostLink post={p} /></li>)}
       </ul>
